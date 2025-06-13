@@ -94,6 +94,21 @@ Impact des conditions météorologiques :
 Répartition géographique des accidents :
 
 
+## Utilisation Power  BI  Pour la Visualisation des donnees :
+
+Nombre de personnes impliquées dans des accidents par année
+
+<img src="Data/Images/Screenshot 2025-06-13 115253.png" width="400" style="display: block; margin: 0 auto;">
+<p style='text-align: center; font-style: italic; color: #7f8c8d;'>
+</p>
+
+.Nombre d'accidents par mois
+.Impact des conditions météorologiques :
+.Répartition géographique des accidents :
+
+<img src="Data/Images/Screenshot 2025-06-13 115740.png" width="400" style="display: block; margin: 0 auto;">
+<p style='text-align: center; font-style: italic; color: #7f8c8d;'>
+</p>
 
 ### Business Recommendation 1
 investir dans les modèles les plus fiables
