@@ -88,15 +88,18 @@ Calcul du nombre d’accidents par modèle, normalisé si possible par l’usage
 Identification des modèles présentant le moins d’accidents ou de blessures graves
 
 📈 Visualisation : Nombre d'accidents par mois
+
 <img src="Data/Images/Screenshot 2025-06-07 183539.png" width="400" style="display: block; margin: 0 auto;">
 <p style='text-align: center; font-style: italic; color: #7f8c8d;'>
 </p>
 
 Impact des conditions météorologiques :
+
 <img src="Data/Images/Screenshot 2025-06-07 182936.png" width="400" style="display: block; margin: 0 auto;">
 <p style='text-align: center; font-style: italic; color: #7f8c8d;'>
 </p>
 Répartition géographique des accidents :
+
 <img src="Data/Images/Screenshot 2025-06-07 183010.png" width="400" style="display: block; margin: 0 auto;">
 <p style='text-align: center; font-style: italic; color: #7f8c8d;'>
 </p>
