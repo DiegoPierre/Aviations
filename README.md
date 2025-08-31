@@ -88,12 +88,37 @@ Calcul du nombre d’accidents par modèle, normalisé si possible par l’usage
 Identification des modèles présentant le moins d’accidents ou de blessures graves
 
 📈 Visualisation : Nombre d'accidents par mois
+```python
+# Extraire le mois
+df['Month'] = df['Event.Date'].dt.month
+
+# Visualisation
+plt.figure(figsize=(7,3))
+df['Month'].value_counts().sort_index().plot(kind='bar', color='skyblue')
+plt.title("Nombre d'accidents par mois")
+plt.xticks(range(12), ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'])
+plt.show()
+```
 
 <img src="Data/Images/Screenshot 2025-06-07 183539.png" width="400" style="display: block; margin: 0 auto;">
 <p style='text-align: center; font-style: italic; color: #7f8c8d;'>
 </p>
 
 Impact des conditions météorologiques :
+```python
+taux_mortalite = (df['Total.Fatal.Injuries'] > 0).mean() * 100
+print(f" {taux_mortalite:.1f}% des accidents ont causé au moins un décès")
+
+# Visualisation
+plt.figure(figsize=(6,6))
+plt.pie([taux_mortalite, 100-taux_mortalite], 
+        labels=['Accidents mortels', 'Autres'], 
+        colors=['#e74c3c', '#3498db'], 
+        autopct='%1.1f%%')
+plt.title("Proportion d'accidents mortels")
+plt.show()
+
+```
 
 <img src="Data/Images/Screenshot 2025-06-07 182936.png" width="400" style="display: block; margin: 0 auto;">
 <p style='text-align: center; font-style: italic; color: #7f8c8d;'>
