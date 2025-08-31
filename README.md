@@ -125,6 +125,24 @@ plt.show()
 </p>
 Répartition géographique des accidents :
 
+```python
+# Comptage des accidents par condition météo
+accidents_par_meteo = df['Weather.Condition'].value_counts()
+
+# Les 10 conditions météo les plus fréquentes
+top_conditions = accidents_par_meteo.head(10)
+
+plt.figure(figsize=(12,6))
+top_conditions.plot(kind='bar', color='cornflowerblue')
+plt.title("Nombre d'accidents par condition météorologique")
+plt.xlabel("Condition météo")
+plt.ylabel("Nombre d'accidents")
+plt.xticks(rotation=45, ha='right')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.show()
+
+```
+
 <img src="Data/Images/Screenshot 2025-06-07 183010.png" width="400" style="display: block; margin: 0 auto;">
 <p style='text-align: center; font-style: italic; color: #7f8c8d;'>
 </p>
